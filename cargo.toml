@@ -2,4 +2,5 @@
 
 members = [
     "azure_rtos",
+    "board_agent"
 ]

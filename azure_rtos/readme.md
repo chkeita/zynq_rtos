@@ -14,3 +14,8 @@
     ```
 - in threadx/build, rename libthreadx.a to libthreadx.lib
 - run cargo build
+
+
+
+### some docs
+https://docs.rust-embedded.org/book/c-tips/index.html
