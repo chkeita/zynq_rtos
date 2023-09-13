@@ -5,11 +5,10 @@ use std::path::PathBuf;
 
 fn main() {
     let build_dir = env::current_dir().unwrap().join("threadx/build");
+    let inc_dir = env::current_dir().unwrap().join("threadx/ports/cortex_a9/gnu/inc");
     // Tell cargo to look for shared libraries in the specified directory
     println!("cargo:rustc-link-search={}", build_dir.display());
-    println!("cargo:rustc-link-search=C:\\dev\\scratch\\azure_rtos\\threadx\\ports\\cortex_a9\\gnu\\inc");
-
-
+    println!("cargo:rustc-link-search={}", inc_dir.display());
     //println!("cargo:warning=***** current dir: {:?}", env::current_dir().unwrap());
     println!("cargo:rustc-link-lib=static=libthreadx");
 
